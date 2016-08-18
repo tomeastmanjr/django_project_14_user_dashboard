@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Dashboard</title>
+  {% load staticfiles %}
+<link rel="stylesheet" href="{% static 'userdashboard/css/style.css' %}"media="screen" title="no title"  charset="utf-8">
+<script src="{% static 'userdashboard/js/main.js' %}" > </script>
+</head>
+<body>
+  <h1>All Users</h1>
+
+  <a href="{% url 'show' %}">Show a user</a>
+  <a href="{% url 'admin' %}">Go to admin dashboard</a>
+</body>
+</html>
